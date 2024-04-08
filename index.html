@@ -11,10 +11,12 @@
 
     <div id="app">
         <ul>
-            <li v-for="mail in mails" v-if="mails.length === 10">{{mail}} </li>
+            <template v-for="mail in mails">
+                <li v-if="mails.length === 10">{{mail}} </li>
+            </template>
         </ul>
     </div>
-
+    
     <script src="./js/app.js"></script>
 </body>
 </html>
